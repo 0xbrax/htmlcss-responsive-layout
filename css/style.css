@@ -58,6 +58,10 @@ a:hover {text-decoration: none;}
     margin-top: 110px;
 }
 
+.my-top3r {
+    margin-top: 3rem;
+}
+
 .my-bottom1dot5r {
     margin-bottom: 1.5rem;
 }
@@ -115,6 +119,20 @@ nav .col {
     padding-bottom: 1.5rem;
 }
 
+.section2 .card:last-child {
+    background-color: var(--white);
+}
+
+/* SECTION 3 */
+
+.section3 .card {
+    background-color: var(--sec-col);
+}
+
+
+
+
+
 
 
 
@@ -152,6 +170,10 @@ nav .col {
         width: calc(((100% / 3) * 2) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
+        display: flex;
+    }
+    .section3 .card {
+        text-align: left;
         display: flex;
     }
 }
