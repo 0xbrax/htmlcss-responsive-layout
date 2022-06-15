@@ -66,8 +66,12 @@ a:hover {text-decoration: none;}
     margin-bottom: 1.5rem;
 }
 
-.card {
+.card1 {
     border-radius: 20px;
+}
+
+.card2 {
+    border-radius: 40px;
 }
 
 /**************************
@@ -104,7 +108,7 @@ nav .col {
 
 /* SECTION 1 */
 
-.section1 .card {
+.section1 .card1 {
     background-color: var(--main-col-light);
 }
 
@@ -119,14 +123,25 @@ nav .col {
     padding-bottom: 1.5rem;
 }
 
-.section2 .card:last-child {
+.section2 .card2:last-child {
     background-color: var(--white);
 }
 
 /* SECTION 3 */
 
-.section3 .card {
+.section3 .card2 {
     background-color: var(--sec-col);
+}
+
+/* SECTION 4 */
+
+.section4 {
+    background-color: var(--sec-col);
+    padding-top: 1.5rem;
+}
+
+.section4 .card1 {
+    background-color: var(--white);
 }
 
 
@@ -161,20 +176,31 @@ nav .col {
         margin-left: -0.75rem;
         margin-right: -0.75rem;
     }
-    .section1 .card {
+    .section1 .card1 {
         width: calc((100% / 3) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
     }
-    .section1 .card:first-child {
+    .section1 .card1:first-child {
         width: calc(((100% / 3) * 2) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
         display: flex;
     }
-    .section3 .card {
+    .section3 .card2 {
         text-align: left;
         display: flex;
+    }
+    .section4 .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    .section4 .card1 {
+        width: calc((100% / 2) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 }
 
@@ -190,10 +216,15 @@ nav .col {
         justify-content: space-between;
         align-items: flex-end;
     }
-    .section2 .card {
+    .section2 .card2 {
         width: 48%;
     }
-    .section2 .card:first-child {
+    .section2 .card2:first-child {
         margin-bottom: 0;
+    }
+    .section4 .card1 {
+        width: calc((100% / 3) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 }
