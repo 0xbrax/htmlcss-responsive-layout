@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+.txt-center {
+    text-align: center;
+}
+
 /**************************
     COMMON
 **************************/
@@ -38,14 +42,24 @@ a:visited {text-decoration: none;}
 a:active {text-decoration: none;}
 a:hover {text-decoration: none;}
 
-.container {
+.container1 {
     padding: 0 2rem;
     max-width: 1400px;
     margin: auto;
 }
 
-.my-top110 {
+.container2 {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.my-top110p {
     margin-top: 110px;
+}
+
+.my-bottom1dot5r {
+    margin-bottom: 1.5rem;
 }
 
 .card {
@@ -87,15 +101,19 @@ nav .col {
 /* SECTION 1 */
 
 .section1 .card {
-    margin-bottom: 1.5rem;
     background-color: var(--main-col-light);
-    text-align: center;
 }
 
-.section1 .card:first-child {
-    text-align: left;
+/* SECTION 2 */
+
+.section2 {
+    background-color: var(--sec-col);
 }
 
+.section2 .cards {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 
 
 
@@ -144,5 +162,16 @@ nav .col {
     }
     .menu {
         display: block;
+    }
+    .section2 .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .section2 .card {
+        width: 48%;
+    }
+    .section2 .card:first-child {
+        margin-bottom: 0;
     }
 }
