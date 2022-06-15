@@ -58,12 +58,20 @@ a:hover {text-decoration: none;}
     margin-top: 110px;
 }
 
+.my-top1dot5r {
+    margin-top: 1.5rem;
+}
+
 .my-top3r {
     margin-top: 3rem;
 }
 
 .my-bottom1dot5r {
     margin-bottom: 1.5rem;
+}
+
+.my-bottom3r {
+    margin-bottom: 3rem;
 }
 
 .card1 {
@@ -138,11 +146,19 @@ nav .col {
 .section4 {
     background-color: var(--sec-col);
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .section4 .card1 {
     background-color: var(--white);
 }
+
+/* SECTION 5 */
+
+.section5 a {
+    display: block;
+}
+
 
 
 
@@ -202,6 +218,16 @@ nav .col {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
     }
+    .section5 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section5 .item:first-child {
+        width: 69%;
+    }
+    .section5 .item:last-child {
+        width: 29%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -216,15 +242,22 @@ nav .col {
         justify-content: space-between;
         align-items: flex-end;
     }
+    .section2 .item,
     .section2 .card2 {
         width: 48%;
     }
-    .section2 .card2:first-child {
+    .section2 .item {
         margin-bottom: 0;
     }
     .section4 .card1 {
         width: calc((100% / 3) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
+    }
+    .section5 .item:first-child {
+        width: 79%;
+    }
+    .section5 .item:last-child {
+        width: 19%;
     }
 }
