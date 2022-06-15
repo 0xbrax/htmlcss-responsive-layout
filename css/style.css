@@ -44,6 +44,14 @@ a:hover {text-decoration: none;}
     margin: auto;
 }
 
+.my-top110 {
+    margin-top: 110px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
 /**************************
     BODY
 **************************/
@@ -52,10 +60,16 @@ a:hover {text-decoration: none;}
 
 header {
     background-color: var(--main-col);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 nav .col {
     line-height: 70px;
+    width: 50%;
 }
 
 .menu {
@@ -70,6 +84,17 @@ nav .col {
     color: var(--black);
 }
 
+/* SECTION 1 */
+
+.section1 .card {
+    margin-bottom: 1.5rem;
+    background-color: var(--main-col-light);
+    text-align: center;
+}
+
+.section1 .card:first-child {
+    text-align: left;
+}
 
 
 
@@ -94,7 +119,23 @@ nav .col {
 **************************/
 
 @media screen and (min-width: 576px) {
-
+    .section1 .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    .section1 .card {
+        width: calc((100% / 3) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    .section1 .card:first-child {
+        width: calc(((100% / 3) * 2) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 768px) {
