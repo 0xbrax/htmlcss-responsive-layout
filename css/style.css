@@ -15,6 +15,7 @@
     --black: #000;
     --white: #FFF;
     --yellow: #fec15e;
+    --gray: #333333;
 }
 
 .flex {
@@ -51,6 +52,18 @@ a:hover {text-decoration: none;}
 .container2 {
     padding: 0 2rem;
     max-width: 1200px;
+    margin: auto;
+}
+
+.container3 {
+    padding: 0 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.container4 {
+    padding: 0 2rem;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -159,8 +172,25 @@ nav .col {
     display: block;
 }
 
+/* SECTION 6 */
 
+.section6 {
+    background-color: var(--sec-col);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 
+.section6 a {
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--gray);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 
 
 
