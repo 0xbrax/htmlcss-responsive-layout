@@ -1,5 +1,107 @@
+/**************************
+    UTILITY
+**************************/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --main-col: #0084fd;
+    --main-col-light: #b5ddff;
+    --sec-col: #9792e4;
+    --black: #000;
+    --white: #FFF;
+    --yellow: #fec15e;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.center {
+    align-items: center;
+}
+
+/**************************
+    COMMON
+**************************/
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:active {text-decoration: none;}
+a:hover {text-decoration: none;}
+
+.container {
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/**************************
+    BODY
+**************************/
+
+/* HEADER */
+
+header {
+    background-color: var(--main-col);
+}
+
+nav .col {
+    line-height: 70px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li a {
+    color: var(--black);
+}
+
+
+
+
+
+
+/**************************
+    DEBUG
+**************************/
+
+.debug header {
+    height: 70px;
+}
+
+.debug .col {
+    background-color: var(--main-col-light);
+}
+
+
+
+/**************************
+    MEDIA QUERY
+**************************/
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .mcdonalds {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
 }
