@@ -123,6 +123,10 @@ a:hover {text-decoration: none;}
     color: var(--gray);
 }
 
+.text-purple {
+    color: var(--sec-col);
+}
+
 .line-height70 {
     line-height: 70px;
 }
@@ -267,6 +271,17 @@ header img {
     background-color: var(--sec-col);
 }
 
+.section3 img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section3 .card2 {
+    padding: 1.5rem;
+}
+
 /* SECTION 4 */
 
 .section4 {
@@ -356,6 +371,13 @@ footer {
     .section3 .card2 {
         text-align: left;
         display: flex;
+        align-items: center;
+    }
+    .section3 .profile-container {
+        margin-left: 1.5rem;
+    }
+    .section3 .card2 p {
+        margin-top: 0;
     }
     .section4 .cards {
         display: flex;
