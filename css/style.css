@@ -392,24 +392,27 @@ footer {
     padding-bottom: 3Rem;
 }
 
-
-
-
-
-
 /**************************
-    DEBUG BODY CLASS
+    FX
 **************************/
 
-.debug header {
-    height: 70px;
+html {
+    scroll-behavior: smooth;
 }
 
-.debug .col {
-    background-color: var(--main-col-light);
+section {
+    scroll-margin-top: 70px;
 }
 
+.fx-btn-menu:hover {
+    box-shadow: inset 0px -5px 0px 0px var(--white);
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0.9;
+}
 
+.fx-btn:hover {
+    opacity: 0.8;
+}
 
 /**************************
     MEDIA QUERY
@@ -481,7 +484,7 @@ footer {
     .menu {
         display: block;
     }
-    .section1 .card1:first-child .btn-apple {
+    .section1 .card1:first-child .text-container {
         padding-bottom: 1.5rem;
     }
     .section1 .card1:first-child {
@@ -517,4 +520,16 @@ footer {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
     }
+}
+
+/**************************
+    DEBUG BODY CLASS
+**************************/
+
+.debug header {
+    height: 70px;
+}
+
+.debug .col {
+    background-color: var(--main-col-light);
 }

@@ -18,19 +18,19 @@
         <header>
             <nav class="container1 flex justify center">
                 <div class="col logo flex center">
-                    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                    <a href="#home"><img src="img/logo.png" alt="Logo"></a>
                 </div>
                 <div class="col">
-                    <div class="mcdonalds text-white">
-                        <i class="fa-solid fa-bars fa-xl"></i>
+                    <div class="mcdonalds">
+                        <a class="line-height70 text-white" href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
                     </div>
                     <div class="menu">
                         <ul class="flex center">
-                            <li><a class="btn-topbar1 text-white" href="#">Planning</a></li>
-                            <li><a class="btn-topbar1 text-white" href="#">Testimonials</a></li>
-                            <li><a class="btn-topbar1 text-white" href="#">Features</a></li>
-                            <li><a class="btn-topbar1 text-white" href="#">About Us</a></li>
-                            <li><a class="btn-topbar2 text-black" href="#">Get Starded</a></li>
+                            <li><a class="btn-topbar1 text-white fx-btn-menu" href="#planning">Planning</a></li>
+                            <li><a class="btn-topbar1 text-white fx-btn-menu" href="#testimonials">Testimonials</a></li>
+                            <li><a class="btn-topbar1 text-white fx-btn-menu" href="#features">Features</a></li>
+                            <li><a class="btn-topbar1 text-white fx-btn-menu" href="#about-us">About Us</a></li>
+                            <li><a class="btn-topbar2 text-black fx-btn" href="#get-started">Get Starded</a></li>
                         </ul>
                     </div>
                 </div>
@@ -40,13 +40,13 @@
         <!--
             SECTION 1
         -->
-        <section class="section1 container1 my-top3r">
+        <section id="home" class="section1 container1 my-top1dot5r py-top1dot5r">
             <div class="cards">
                 <div class="card1 my-bottom1dot5r">
-                    <div>
+                    <div class="text-container">
                         <h2 class="text-blue py-top1dot5r">Get a demo application</h2>
                         <p class="text-gray line-height1dot5r py-top1dot5r">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste modi dignissimos rerum, aut quibusdam ut, dolores porro molestiae, dolorum perspiciatis obcaecati.</p>
-                        <div class="btn-apple py-top1dot5r"><a class="btn-blue text-white" href="#"><i class="fa-brands fa-apple"></i>&nbsp;&nbsp;<span class="text-bold">App Store</span></a></div>
+                        <a class="btn-blue text-white my-top1dot5r fx-btn" href="#"><i class="fa-brands fa-apple"></i>&nbsp;&nbsp;<span class="text-bold">App Store</span></a>
                     </div>
                     <div class="phone-container py-top1dot5r">
                         <img id="phone" src="img/phone.png" alt="Item1">
@@ -78,7 +78,7 @@
         <!--
             SECTION 2
         -->
-        <section class="section2 my-top1dot5r">
+        <section id="planning" class="section2 my-top1dot5r">
             <div class="container2 cards">
                 <div class="item my-bottom1dot5r text-white">
                     <div>
@@ -93,7 +93,7 @@
                     </div>
                     <h2 class="my-top1dot5r">App Developement</h2>
                     <p class="line-height1dot5r text-italic my-top1dot5r">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam enim neque.</p>
-                    <a class="btn-purple text-black my-top1dot5r" href="#"><i class="fa-solid fa-arrow-down-long"></i></a>
+                    <a class="btn-purple text-black my-top1dot5r fx-btn" href="#features"><i class="fa-solid fa-arrow-down-long"></i></a>
                 </div>
             </div>
         </section>
@@ -101,10 +101,10 @@
         <!--
             SECTION 3
         -->
-        <section class="section3 container1 my-top3r my-bottom3r">
+        <section id="testimonials" class="section3 container1 my-top1dot5r py-top1dot5r my-bottom3r">
             <div class="txt-center my-bottom1dot5r">
                 <div>TESTIMONIALS</div>
-                <h1 class="my-top1dot5r">We are committed expert partners</h1>
+                <h1 class="fontsize2dot5r text-purple my-top1dot5r">We are committed expert partners</h1>
                 <p class="line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas, ullam commodi modi tenetur aperiam optio laborum atque aliquam at ducimus illum corrupti dolor id odio doloremque sint vitae accusamus.</p>
             </div>
             <div class="txt-center text-white card2 my-bottom1dot5r">
@@ -139,47 +139,47 @@
         <!--
             SECTION 4
         -->
-        <section class="section4">
+        <section id="features" class="section4">
             <div class="container1">
                 <div class="txt-center my-bottom3r">
-                    <h1 class="text-purple">Benefits of working with us</h1>
+                    <h1 class="fontsize2dot5r text-white">Benefits of working with us</h1>
                 </div>
                 <div class="cards">
                     <div class="card1 my-bottom1dot5r">
                         <h1 class="text-purple fontsize2dot5r">01</h1>
                         <h3 class="text-purple my-top1dot5r">High quality</h3>
                         <p class="text-gray line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae, nisi culpa a ipsum consequuntur animi velit, incidunt natus quisquam facilis cumque ipsa optio officia ex error! Rem, ipsa ut.</p>
-                        <a class="btn-purple-big text-bold text-white my-top1dot5r" href="#">more</a>
+                        <a class="btn-purple-big text-bold text-white my-top1dot5r fx-btn" href="#">more</a>
                     </div>
                     <div class="card1 my-bottom1dot5r">
                         <h1 class="text-purple fontsize2dot5r">02</h1>
                         <h3 class="text-purple my-top1dot5r">Creative Team</h3>
                         <p class="text-gray line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae, nisi culpa a ipsum consequuntur animi velit, incidunt natus quisquam facilis cumque ipsa optio officia ex error! Rem, ipsa ut.</p>
-                        <a class="btn-purple-big text-bold text-white my-top1dot5r" href="#">more</a>
+                        <a class="btn-purple-big text-bold text-white my-top1dot5r fx-btn" href="#">more</a>
                     </div>
                     <div class="card1 my-bottom1dot5r">
                         <h1 class="text-purple fontsize2dot5r">03</h1>
                         <h3 class="text-purple my-top1dot5r">amazing Results</h3>
                         <p class="text-gray line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae, nisi culpa a ipsum consequuntur animi velit, incidunt natus quisquam facilis cumque ipsa optio officia ex error! Rem, ipsa ut.</p>
-                        <a class="btn-purple-big text-bold text-white my-top1dot5r" href="#">more</a>
+                        <a class="btn-purple-big text-bold text-white my-top1dot5r fx-btn" href="#">more</a>
                     </div>
                     <div class="card1 my-bottom1dot5r">
                         <h1 class="text-purple fontsize2dot5r">04</h1>
                         <h3 class="text-purple my-top1dot5r">Best Pricing</h3>
                         <p class="text-gray line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae, nisi culpa a ipsum consequuntur animi velit, incidunt natus quisquam facilis cumque ipsa optio officia ex error! Rem, ipsa ut.</p>
-                        <a class="btn-purple-big text-bold text-white my-top1dot5r" href="#">more</a>
+                        <a class="btn-purple-big text-bold text-white my-top1dot5r fx-btn" href="#">more</a>
                     </div>
                     <div class="card1 my-bottom1dot5r">
                         <h1 class="text-purple fontsize2dot5r">05</h1>
                         <h3 class="text-purple my-top1dot5r">Innovations</h3>
                         <p class="text-gray line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae, nisi culpa a ipsum consequuntur animi velit, incidunt natus quisquam facilis cumque ipsa optio officia ex error! Rem, ipsa ut.</p>
-                        <a class="btn-purple-big text-bold text-white my-top1dot5r" href="#">more</a>
+                        <a class="btn-purple-big text-bold text-white my-top1dot5r fx-btn" href="#">more</a>
                     </div>
                     <div class="card1 my-bottom1dot5r">
                         <h1 class="text-purple fontsize2dot5r">06</h1>
                         <h3 class="text-purple my-top1dot5r">24&sol;7 Support</h3>
                         <p class="text-gray line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae, nisi culpa a ipsum consequuntur animi velit, incidunt natus quisquam facilis cumque ipsa optio officia ex error! Rem, ipsa ut.</p>
-                        <a class="btn-purple-big text-bold text-white my-top1dot5r" href="#">more</a>
+                        <a class="btn-purple-big text-bold text-white my-top1dot5r fx-btn" href="#">more</a>
                     </div>
                 </div>
             </div>
@@ -188,9 +188,9 @@
         <!--
             SECTION 5
         -->
-        <section class="section5 container1 my-top3r my-bottom3r">
+        <section id="about-us" class="section5 container1 my-top1dot5r py-top1dot5r my-bottom3r">
             <div class="item">
-                <h1 class="text-purple">About Us</h1>
+                <h1 class="fontsize2dot5r text-purple">About Us</h1>
                 <p class="line-height1dot5r my-top1dot5r">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis inventore enim illum voluptas ab corporis quo? Veniam velit, perspiciatis fuga non, sunt consequatur esse vero incidunt delectus, ratione corporis voluptas.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis inventore enim illum voluptas ab corporis quo? Veniam velit, perspiciatis fuga non, sunt consequatur esse vero incidunt delectus, ratione corporis voluptas.
@@ -208,7 +208,7 @@
                 </div>
                 <div class="txt-img-quote">
                     <h2 class="text-purple my-top1dot5r">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</h2>
-                    <a class="btn-purple-about text-white my-top1dot5r" href="#"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;Find me on Linkedin</a>
+                    <a class="btn-purple-about text-white my-top1dot5r fx-btn" href="#"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;Find me on Linkedin</a>
                 </div>
             </div>
         </section>
@@ -216,13 +216,13 @@
         <!--
             SECTION 6
         -->
-        <section class="section6">
+        <section id="get-started" class="section6">
             <div class="container3 txt-center text-white">
                 <div class="fontsize1dot5r text-light">GET STARTED</div>
                 <h2 class="fontsize2dot5r my-top1dot5r">Simple, Transparent Pricing</h2>
                 <h1 class="fontsize3dot5r text-yellow my-top1dot5r">It's Free!</h1>
                 <p class="line-height1dot5r my-top1dot5r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam aliquid beatae excepturi voluptatem velit nobis rerum dolores nesciunt accusamus commodi eaque libero magnam delectus, repudiandae expedita voluptas ipsum accusantium.</p>
-                <a class="btn-white text-purple text-bold fontsize1dot5r my-top1dot5r" href="#">Get Started</a>
+                <a class="btn-white text-purple text-bold fontsize1dot5r my-top1dot5r fx-btn" href="#">Get Started</a>
                 <div class="my-top1dot5r">Copyright 2022 Boolean &#9679; Classe XX &#9679; <a style="text-decoration: underline;" class="text-white" href="#">Privacy policy</a></div>
             </div>
         </section>
