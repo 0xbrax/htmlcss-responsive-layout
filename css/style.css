@@ -15,7 +15,11 @@
     --black: #000;
     --white: #FFF;
     --yellow: #fec15e;
-    --gray: #333333;
+    --gray: #555;
+}
+
+body {
+    font-family: sans-serif;
 }
 
 .flex {
@@ -87,6 +91,52 @@ a:hover {text-decoration: none;}
     margin-bottom: 3rem;
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-blue {
+    color: var(--main-col);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.line-height70 {
+    line-height: 70px;
+}
+
+.line-height1dot5r {
+    line-height: 1.5rem;
+}
+
+.btn-topbar1 {
+    line-height: 70px;
+    padding: 0 10px;
+}
+
+.btn-topbar2 {
+    background-color: var(--white);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.btn-blue {
+    background-color: var(--main-col);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
 .card1 {
     border-radius: 20px;
 }
@@ -103,16 +153,35 @@ a:hover {text-decoration: none;}
 
 header {
     background-color: var(--main-col);
-    position: fixed;
+    height: 70px;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     z-index: 999;
 }
 
-nav .col {
-    line-height: 70px;
-    width: 50%;
+nav .col:first-child {
+    width: 20%;
+}
+
+nav .col:last-child {
+    width: 75%;
+}
+
+.header img {
+    display: block;
+    height: 40px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.col a {
+    display: inline-block;
+}
+
+.mcdonalds {
+    text-align: right;
 }
 
 .menu {
@@ -121,16 +190,27 @@ nav .col {
 
 .menu ul {
     list-style: none;
-}
-
-.menu ul li a {
-    color: var(--black);
+    justify-content: flex-end;
 }
 
 /* SECTION 1 */
 
 .section1 .card1 {
     background-color: var(--main-col-light);
+}
+
+.section1 .card1:first-child a {
+    display: inline-block;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+}
+
+#phone {
+    display: block;
+    width: 70%;
 }
 
 /* SECTION 2 */
@@ -231,7 +311,9 @@ footer {
         width: calc(((100% / 3) * 2) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
-        display: flex;
+    }
+    .phone-container {
+        justify-content: flex-start;
     }
     .section3 .card2 {
         text-align: left;
@@ -266,6 +348,17 @@ footer {
     }
     .menu {
         display: block;
+    }
+    .section1 .card1:first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section1 .card1:first-child > div {
+        width: 48%;
+    }
+    .phone-container {
+        justify-content: center;
+        align-items: flex-end;
     }
     .section2 .cards {
         display: flex;
