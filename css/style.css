@@ -55,7 +55,7 @@ a:hover {text-decoration: none;}
 
 .container2 {
     padding: 0 2rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -91,8 +91,20 @@ a:hover {text-decoration: none;}
     margin-bottom: 3rem;
 }
 
+.py-top1dot5r {
+    padding-top: 1.5rem;
+}
+
+.py-bottom1dot5r {
+    padding-bottom: 1.5rem;
+}
+
 .text-bold {
     font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
 }
 
 .text-white {
@@ -119,6 +131,10 @@ a:hover {text-decoration: none;}
     line-height: 1.5rem;
 }
 
+.fontsize5r {
+    font-size: 5rem;
+}
+
 .btn-topbar1 {
     line-height: 70px;
     padding: 0 10px;
@@ -135,6 +151,13 @@ a:hover {text-decoration: none;}
     background-color: var(--main-col);
     padding: 10px 15px;
     border-radius: 20px;
+}
+
+.btn-purple {
+    background-color: var(--sec-col);
+    line-height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
 }
 
 .card1 {
@@ -167,7 +190,7 @@ nav .col:last-child {
     width: 75%;
 }
 
-.header img {
+header img {
     display: block;
     height: 40px;
 }
@@ -197,6 +220,7 @@ nav .col:last-child {
 
 .section1 .card1 {
     background-color: var(--main-col-light);
+    padding: 0 1.5rem;
 }
 
 .section1 .card1:first-child a {
@@ -220,12 +244,21 @@ nav .col:last-child {
 }
 
 .section2 .cards {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section2 img {
+    width: 100%;
 }
 
 .section2 .card2:last-child {
     background-color: var(--white);
+    padding: 1.5rem;
+}
+
+.section2 .card2 a {
+    display: inline-block;
 }
 
 /* SECTION 3 */
@@ -311,9 +344,14 @@ footer {
         width: calc(((100% / 3) * 2) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
+        display: flex;
+        flex-wrap: wrap;
     }
     .phone-container {
         justify-content: flex-start;
+    }
+    #phone {
+        width: 80%;
     }
     .section3 .card2 {
         text-align: left;
@@ -349,8 +387,10 @@ footer {
     .menu {
         display: block;
     }
+    .section1 .card1:first-child .btn-apple {
+        padding-bottom: 1.5rem;
+    }
     .section1 .card1:first-child {
-        display: flex;
         justify-content: space-between;
     }
     .section1 .card1:first-child > div {
@@ -360,14 +400,20 @@ footer {
         justify-content: center;
         align-items: flex-end;
     }
+    #phone {
+        max-height: calc(312px - 1.5rem);
+        object-fit: contain;
+    }
     .section2 .cards {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
     }
     .section2 .item,
     .section2 .card2 {
         width: 48%;
+    }
+    .section2 .card2 {
+        margin-top: 6rem;
     }
     .section2 .item {
         margin-bottom: 0;
